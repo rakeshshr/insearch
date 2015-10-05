@@ -1,0 +1,26 @@
+{
+  "name": "project_1",
+  "version": "1.0.0",
+  "description": "#hashit",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Baker",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^0.8.3",
+    "body-parser": "^1.13.2",
+    "chai": "^3.2.0",
+    "cheerio": "^0.19.0",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3",
+    "mocha": "^2.2.5",
+    "mongo": "^0.1.0",
+    "mongoose": "^4.0.8",
+    "node": "0.0.0",
+    "request": "^2.60.0",
+    "underscore": "^1.8.3"
+  }
+}

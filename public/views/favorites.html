@@ -1,0 +1,181 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>#hashit</title>
+
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+  <body
+    style="background-image: url(https://imageshack.com/a/img538/8209/agRZqF.png)">
+    <!-- style="background-image: url(https://download.unsplash.com/uploads/1413152676137eccd463c/61606b7b)"> -->
+      <!-- <div class="container-fluid"> -->
+
+        <!-- start of navbar -->
+
+        <nav class="navbar navbar-default" id="nav">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">#hashIt</a>
+            </div>
+
+<!--             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+ -->
+              <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+                <!-- <ul class="nav navbar-nav navbar-right" id="nav-links"> -->
+                  <ul class="nav navbar-nav">
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right" id="nav-links">
+                  
+                  <script type="text/template" id="nav-template">
+                    <% if (currentUser) { %>
+                      <li><a href="/profile">Profile</a></li>
+                      <li><a href="/logout">Log Out</a></li>
+                    <% } else { %>
+                      <li><a href="#" data-toggle="modal" data-target="#signup-modal">Sign Up</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#login-modal">Log In</a></li>
+                    <% } %>
+                  </script>
+
+                </ul>  
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+        </nav>
+        <!-- end of navbar -->
+
+
+
+
+
+    <div class="container-fluid">
+        <div class= "col-md-12" id="big_col">
+          <div class="well well-lg" id="bigWell">
+            <div class= "row">
+
+              <!-- search bar -->
+
+              </div><!-- /.row -->
+
+              <!-- end of search bar -->
+
+              <!-- panel 1 -->
+
+              <div class="panel panel-default" id="panell">
+                <div class="panel-heading" id="headd">
+                  <h3 class="panel-titlee" align="center">Welcome to your favorites page</h3>
+                </div>
+                <div class="panel-bodyy">
+                  Click the 'X' to remove recently added favorites. Click on more images to keep 'em coming!              </div>
+              </div>
+                <div class="container-fluid">
+                  <div class="well well-lg" id="leftWelll">
+
+                    <ul id="fav-container"></ul>
+
+                  </div>
+              </div>
+
+              <!-- panel 2 -->
+
+              <!-- social -->
+
+              <div id="share-buttons" align="center">
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/rakesh.shrestha.16" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/shrestha87" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                </a>
+
+           
+              </div>
+
+            </div>
+
+          <!-- end social -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+  </div>
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- underscore -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!-- custom script -->
+    <script src="scripts/script.js"></script>
+
+    <!-- hash template -->
+    <script type="text/template" id="hash-template">
+      <div class="cbp-rfgrid">
+      <p>
+      <div class="col-md-12">
+      <a href="#" style="color:#337ab7">
+            <img src='<%= image %>'>
+            </div>
+            <div>
+            <hr>
+            <div id="text"><%= text %>
+            </div>
+            </a>
+            </p>
+      </div>
+      </script>
+
+      <!-- fav template -->
+      <script type="text/template" id="fav-template">
+        <div class="cbp-rfgrid">
+        <p>
+        <div class="col-md-12">
+        <a href="#" style="color:#337ab7">
+              <img src='<%= image %>'>
+              </div>
+              <div>
+              <hr>
+              <div id="text"><%= text %>
+              </div>
+              </a>
+              </p>
+        </div>
+        </script>
+
+
+
+  </body>
+</html>
